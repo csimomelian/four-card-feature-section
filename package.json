@@ -1,0 +1,22 @@
+{
+    "name": "four-card-feature-section",
+    "version": "1.0.0",
+    "description": "FrontEnd Mentor Challenge",
+    "main": "index.html",
+    "scripts": {
+        "sass": "node-sass --watch ./scss/main.scss ./css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/csimomelian/four-card-feature-section.git"
+    },
+    "author": "omisc",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/csimomelian/four-card-feature-section/issues"
+    },
+    "homepage": "https://csimomelian.github.io/four-card-feature-section",
+    "dependencies": {
+        "node-sass": "^5.0.0"
+    }
+}
