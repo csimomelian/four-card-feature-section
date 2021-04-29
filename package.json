@@ -15,7 +15,7 @@
     "bugs": {
         "url": "https://github.com/csimomelian/four-card-feature-section/issues"
     },
-    "homepage": "https://csimomelian.github.io/four-card-feature-section",
+    "homepage": "https://csimomelian.github.io/four-card-feature-section/",
     "dependencies": {
         "node-sass": "^5.0.0"
     }
