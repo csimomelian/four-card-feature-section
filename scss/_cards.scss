@@ -1,0 +1,90 @@
+.cards {
+    padding-top: 6.24rem;
+    
+    &__inner {
+        
+        @media only screen and (min-width: 800px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            '...  builder  ... '
+            'supervisor   builder  calculator '
+            'supervisor   karma    calculator ' 
+            '...  karma  ...';
+            grid-gap: 3rem;
+        }
+    }
+
+    &__card {
+
+        padding: 3.2rem 3.2rem 3.3rem 3.2rem;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0px 14px 25px -11px rgba(0,0,0, 0.20);
+        position: relative;
+        margin-bottom: 3rem;
+        &:nth-child(1) {
+            grid-area: supervisor;
+            &:before{
+                
+                background-color: var(--color-cyan);
+            }
+        }
+
+        &:nth-child(2) {
+            grid-area: builder;
+            &:before{
+                background-color: var(--color-red);
+            }
+        }
+
+        &:nth-child(3) {
+            grid-area: karma;
+            &:before{
+                
+                background-color: var(--color-orange);
+            }
+        }
+
+        &:nth-child(4) {
+            grid-area: calculator;
+            &:before{
+                background-color: var(--color-blue);
+            }
+        }
+
+        .title {
+            font-size: 2rem;
+            color: var(--very-dark-blue);
+        }
+
+        .description { 
+            color: var(--grayish-blue);
+            font-size: 1.319rem;
+            line-height: 1.7;
+            margin-top: 0.75rem;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            
+        }
+        
+        .vignette {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 4rem;
+        }
+
+        @media only screen and (min-width: 800px) {
+            margin-bottom: 0;
+        }
+
+    }
+}

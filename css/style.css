@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+:root {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue:hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%); }
+  @media only screen and (max-width: 376px) {
+    :root {
+      font-size: 48%; } }
+
+body {
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  background-color: var(--very-light-gray);
+  color: var(--grayish-blue);
+  position: relative; }
+
+.light {
+  font-weight: 200; }
+
+.regular {
+  font-weight: 400; }
+
+.bolder {
+  font-weight: 600; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 111rem; }
+
+.header {
+  text-align: center;
+  max-width: 53rem;
+  margin: 5.8rem auto 0 auto; }
+  .header__title, .header__subtitle {
+    font-size: 3.66rem;
+    line-height: 1.4;
+    color: var(--very-dark-blue); }
+  .header__description {
+    font-size: 1.512rem;
+    margin: 1.9rem auto 0 auto;
+    color: var(--grayish-blue);
+    line-height: 1.7; }
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0.5rem; }
+  footer a {
+    text-decoration: none;
+    color: var(--color-orange); }
+
+.cards {
+  padding-top: 6.24rem; }
+  @media only screen and (min-width: 800px) {
+    .cards__inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: '...  builder  ... ' 'supervisor   builder  calculator ' 'supervisor   karma    calculator '  '...  karma  ...';
+      grid-gap: 3rem; } }
+  .cards__card {
+    padding: 3.2rem 3.2rem 3.3rem 3.2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 14px 25px -11px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 3rem; }
+    .cards__card:nth-child(1) {
+      grid-area: supervisor; }
+      .cards__card:nth-child(1):before {
+        background-color: var(--color-cyan); }
+    .cards__card:nth-child(2) {
+      grid-area: builder; }
+      .cards__card:nth-child(2):before {
+        background-color: var(--color-red); }
+    .cards__card:nth-child(3) {
+      grid-area: karma; }
+      .cards__card:nth-child(3):before {
+        background-color: var(--color-orange); }
+    .cards__card:nth-child(4) {
+      grid-area: calculator; }
+      .cards__card:nth-child(4):before {
+        background-color: var(--color-blue); }
+    .cards__card .title {
+      font-size: 2rem;
+      color: var(--very-dark-blue); }
+    .cards__card .description {
+      color: var(--grayish-blue);
+      font-size: 1.319rem;
+      line-height: 1.7;
+      margin-top: 0.75rem; }
+    .cards__card:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px; }
+    .cards__card .vignette {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 4rem; }
+    @media only screen and (min-width: 800px) {
+      .cards__card {
+        margin-bottom: 0; } }

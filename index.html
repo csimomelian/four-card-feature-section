@@ -2,17 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Frontend Mentor | Four card feature section</title>
 </head>
 <body>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/csimomelian">omisc</a>.
-      </div>
+    <main class="wrapper">
+        <header class="header">
+            <h1 class="header__title">
+                <span class="light">Reliable, efficient delivery</span>
+                <span class="bolder">Powered by Technology</span>
+            </h1>
+            <p class="header__description regular">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+        </header>
+        <section class="cards">
+            <div class="cards__inner">
+                <div class="cards__card">
+                    <p class="title bolder">Supervisor</p>
+                    <p class="description regular">Monitors activity to identify project roadblocks</p>
+                    <div class="vignette">
+                        <img src="images/icon-supervisor.svg" alt="supervisor" />
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <p class="title bolder">Team Builder</p>
+                    <p class="description regular">Scans our talent network to create the optimal team for your project</p>
+                    <div class="vignette">
+                        <img src="images/icon-team-builder.svg" alt="team builder" />
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <p class="title bolder">Karma</p>
+                    <p class="description regular">Regularly evaluates our talent to ensure quality</p>
+                    <div class="vignette">
+                        <img src="images/icon-karma.svg" alt="karma" />
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <p class="title bolder">Calculator</p>
+                    <p class="description regular">Uses data from past projects to provide better delivery estimates</p>
+                    <div class="vignette">
+                        <img src="images/icon-calculator.svg" alt="calculator" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="bolder">Frontend Mentor</a>. 
+            Coded by <a class="bolder" href="https://github.com/csimomelian">omisc</a>.
+        </p>
+    </footer>
 </body>
 </html>
